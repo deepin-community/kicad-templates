@@ -1,4 +1,28 @@
 #!/usr/bin/make -f
 
+#export DH_VERBOSE=1
+
+# out of tree build folder for schematic templates
+DEB_BUILD_DIR=debian/build
+# default install folder
+INSTDIR=$(CURDIR)/debian/tmp
+
+DEB_templates_CMAKE_OPTS := \
+	-DCMAKE_INSTALL_PREFIX=/usr \
+	-DUSE_KICAD_PRO_FILE=OFF \
+	-DUSE_WORKSHEET_TEMPLATES=ON \
+	$(NULL)
+
 %:
 	dh $@
+
+override_dh_auto_configure:
+	# configuring KiCad templates
+	dh_auto_configure --sourcedirectory=$(CURDIR) --builddirectory=$(DEB_BUILD_DIR)/templates -- $(DEB_templates_CMAKE_OPTS)
+
+override_dh_auto_install:
+	# install KiCad templates
+	dh_auto_install --destdir=$(INSTDIR) --sourcedirectory=$(CURDIR) --builddirectory=$(DEB_BUILD_DIR)/templates
+
+# we have nothing to build so overriding the target
+override_dh_auto_build:
