@@ -1,0 +1,15 @@
+# watch file for kicad-templates from KiCad
+#
+
+# opts= ...
+# pgpsigurlmangle=s/archive\/(\d\S+)\.tar\.gz/releases\/download\/$1\/$1\.tar\.gz\.asc/ \
+# ...
+
+version=4
+
+opts="mode=git, \
+      uversionmangle=s/\.-rc/~rc/; \
+                     s/\.+$//, \
+      dversionmangle=s/\+dfsg(\.?\d+)?$//" \
+      https://gitlab.com/kicad/libraries/kicad-templates.git \
+      refs/tags/(\d+\.\d+\.\d+(?:\.?beta[1-9])?)

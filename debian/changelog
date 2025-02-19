@@ -1,5 +1,225 @@
-template-repository (1.0-1) unstable; urgency=medium
+kicad-templates (8.0.8-1) unstable; urgency=medium
 
-  * Initial release
+  * [630f976] New upstream version 8.0.8
+  * [8c3cb81] d/control: Small update to long description
+  * [ba7d21a] d/copyright: Update year data
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sun, 12 Jan 2025 11:24:06 +0200
+
+kicad-templates (8.0.3-1) unstable; urgency=medium
+
+  * [74b6f02] New upstream version 8.0.3
+  * [54a2b19] d/control: Add new templates to long description
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Tue, 04 Jun 2024 20:57:10 +0200
+
+kicad-templates (8.0.2-1) unstable; urgency=medium
+
+  * [4842213] New upstream version 8.0.2
+  * [54bc63a] d/control: Increase Standards-Version to 4.7.0
+    + No further changes needed.
+  * [6b589d9] d/control: Set Breaks on kicad << 8.0.1
+    (Closes: #1068408, #1067884)
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Wed, 01 May 2024 13:39:54 +0200
+
+kicad-templates (8.0.1-1) unstable; urgency=medium
+
+  * [95bba45] New upstream version 8.0.1
+  * [0c9893d] d/control: Bump recommended version to >= 8.0.1~
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sun, 17 Mar 2024 14:49:48 +0100
+
+kicad-templates (7.0.9-1) unstable; urgency=medium
+
+  * [4461a73] New upstream version 7.0.9
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Thu, 16 Nov 2023 22:07:03 +0100
+
+kicad-templates (7.0.8-1) unstable; urgency=medium
+
+  * [00c2619] New upstream version 7.0.8
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sun, 08 Oct 2023 11:03:34 +0200
+
+kicad-templates (7.0.1-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Wed, 14 Jun 2023 20:40:37 +0200
+
+kicad-templates (7.0.1-1) experimental; urgency=medium
+
+  * [977469d] New upstream version 7.0.1
+  * [cfa17d4] d/control: Increase Standards-Version to 4.6.2
+    + No further changes needed.
+  * [830bf7b] d/control: Bump recommended version to >= 7.0.1~
+  * [ca97e38] d/copyright: Update year data
+  * [ea255be] Lintian: Add overrides for the source
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sun, 12 Mar 2023 12:02:48 +0100
+
+kicad-templates (6.0.8-1) unstable; urgency=medium
+
+  * [bee9dc5] New upstream version 6.0.8
+  * [523398a] d/control: Increase Standards-Version to 4.6.1
+    + No further changes needed.
+  * [856d2fe] d/copyright: Update year data
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Thu, 06 Oct 2022 19:33:25 +0200
+
+kicad-templates (6.0.0-1) unstable; urgency=medium
+
+  * Upload to unstable
+  * [93781b4] New upstream version 6.0.0
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Tue, 04 Jan 2022 17:44:03 +0100
+
+kicad-templates (6.0.0~rc1-1~exp1) experimental; urgency=medium
+
+  * [1375b0f] New upstream version 6.0.0~rc1
+  * [de1ccc5] d/control: Increase Standards-Version to 4.6.0
+  * [941bd16] d/control: Update Homepage field
+  * [790783e] d/copyright: Update Source field to current URL
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sat, 20 Nov 2021 19:52:42 +0100
+
+kicad-templates (6.0.0~20210410-1) experimental; urgency=medium
+
+  * [a3cd755] New upstream version 6.0.0~20210410
+  * [aab5398] d/control: Increase required kicad version >= 6.0.0~
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sat, 10 Apr 2021 10:54:08 +0200
+
+kicad-templates (5.99.0~20210329-1) experimental; urgency=medium
+
+  * [5d3769f] d/watch: update watch file to capture GitLab source
+    + The upstream VCS has moved to GitLab, this requires an update to the
+      watch file.
+  * [c82c186] d/control: increase Standards-Version to 4.5.1
+    + No further changes needed.
+  * [f5cf6c3] d/gbp.conf: Adjust to debian/experimental
+  * [9768b77] New upstream version 5.99.0~20210329
+    + Use a snapshot version from 2021-03-29 as upstream version.
+  * [013389b] d/copyright: Update years on contributors
+  * [fb2055c] d/control: Increase required kicad version >= 5.99.0~
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Mon, 29 Mar 2021 19:56:06 +0200
+
+kicad-templates (5.1.11-1) unstable; urgency=medium
+
+  * [5d3769f] d/watch: update watch file to capture GitLab source
+  * [c82c186] d/control: increase Standards-Version to 4.5.1
+    + No further changes needed.
+  * [d8bc321] d/gbp.conf: Adjust upstream branch to upstream/5.1.x
+  * [9b2d3bd] New upstream version 5.1.11
+    + This new version brings in NO modified or new footprints, it only
+      contains changes regarding the change of the default project URL to
+      http(s)://kicad.org
+  * [453e21e] d/control: Increase Standards-Version to 4.6.0
+    + No further changes needed.
+  * [493e63e] d/control: Update Homepage field
+  * [2466a8e] d/copyright: Update information due release of 5.1.11
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sun, 31 Oct 2021 09:58:03 +0100
+
+kicad-templates (5.1.7-1) unstable; urgency=medium
+
+  * [12cb057] New upstream version 5.1.7
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Fri, 25 Sep 2020 19:01:13 +0200
+
+kicad-templates (5.1.6-1) unstable; urgency=medium
+
+  * [fd5c8a0] New upstream version 5.1.6
+  * [0ea79bc] d/control: increase Standards-Version to 4.5.0
+    + No further changes needed.
+  * [61e2c0b] d/control: adding Rules-Requires-Root to source section
+  * [4b75100] d/copyright: update years on contributors
+  * [c79b505] dh: move over to debhelper-compat
+    + + Moving over to use debhelper-compat (13).
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Wed, 13 May 2020 12:02:10 +0200
+
+kicad-templates (5.1.5-1) unstable; urgency=medium
+
+  * [4d19962] New upstream version 5.1.5
+  * [7cf41e2] d/control: increase Standards-Version to 4.4.1
+    + No further changes needed.
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sun, 17 Nov 2019 18:26:59 +0100
+
+kicad-templates (5.1.3-1) unstable; urgency=medium
+
+  * [b1b8faa] New upstream version 5.1.3
+  * [44b1750] d/control: increase Standards-Version to 4.4.0
+    + No further changes needed.
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Wed, 24 Jul 2019 19:07:25 -0300
+
+kicad-templates (5.1.0-1) unstable; urgency=medium
+
+  * [0ff35c9] New upstream version 5.1.0
+  * [0b82c6d] d/control: increase Standards-Version to 4.3.0
+    + No further changes needed.
+  * [e12ab81] d/copyright: update years on contributors
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Mon, 11 Mar 2019 20:37:17 +0100
+
+kicad-templates (5.0.2-1) unstable; urgency=medium
+
+  * [7b1e635] New upstream version 5.0.2
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Tue, 04 Dec 2018 21:13:06 +0100
+
+kicad-templates (5.0.0-2) unstable; urgency=medium
+
+  * [d1c08eb] d/control: increase Standards-Version to 4.2.1
+    + No further changes needed.
+  * [fe1ab16] d/copyright: extend some legal notes for CC-BY-SA-4.0
+    * Enhancing the content of the CC-BY-SA-4.0 license text as the complete
+      full plain license text was missing and only the human readable text was
+      used.
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Fri, 31 Aug 2018 22:13:07 +0200
+
+kicad-templates (5.0.0-1) unstable; urgency=medium
+
+  * [d538f60] d/watch: fix up matching regular expressions
+    + Corrected to the right GitHub resource and also adjust the uversionmangle
+      regex.
+  * [dea59e3] debian/control: increase Standards-Version to 4.1.5
+    + No further changes needed.
+  * [dbd123e] Multi-Arch: mark kicad-templates foreign
+  * [5ff0535] New upstream version 5.0.0
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Fri, 20 Jul 2018 10:05:05 +0200
+
+kicad-templates (5.0.0~rc1-2) unstable; urgency=medium
+
+  * [a657b92] debian/control: increase Standards-Version to 4.1.4
+    + No further changes needed.
+  * [0a83292] debian/control: adjust field Maintainer due domain change
+    + The contact email address for the Debian Electronics Group has changed
+      to pkg-electronics-devel@alioth-lists.debian.net.
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Thu, 31 May 2018 07:56:32 +0200
+
+kicad-templates (5.0.0~rc1-1) experimental; urgency=medium
+
+  * [1992a85] d/control: fixup VCS URLs
+  * [6c141de] New upstream version 5.0.0~rc1
+  * [c7f533a] delete previous used patch queue
+  * [0314253] d/control: adjusting B+R against previous kicad{-common} pkg
+    (Closes: #891012)
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Mon, 05 Mar 2018 20:45:39 +0100
+
+kicad-templates (0~2018.01.27-1) experimental; urgency=medium
+
+  * Initial upload (Closes: #888476)
+  * [4ffffb3] New upstream version 0~2018.01.27
+  * [b74312b] first and basic Debianisation
+  * [fe2ad16] recommending a kicad version 5.0.0 or greater
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Thu, 01 Feb 2018 17:14:18 +0100

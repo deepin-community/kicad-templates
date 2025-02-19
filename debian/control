@@ -1,15 +1,54 @@
-Source: template-repository
-Section: unknown
+Source: kicad-templates
+Section: electronics
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Electronics Team <pkg-electronics-devel@alioth-lists.debian.net>
+Uploaders:
+ Carsten Schoenert <c.schoenert@t-online.de>,
+ Jean-Samuel Reynaud <js.reynaud@gmail.com>,
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake,
+Rules-Requires-Root: binary-targets
+Vcs-Git: https://salsa.debian.org/electronics-team/KiCad/kicad-templates.git
+Vcs-Browser: https://salsa.debian.org/electronics-team/KiCad/kicad-templates
+Standards-Version: 4.7.0
+Homepage: https://gitlab.com/kicad/libraries/kicad-templates
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: kicad-templates
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+Recommends:
+ kicad (>= 8.0.1~),
+Breaks:
+ kicad (<< 8.0.1~),
+ kicad-common (<< 5.0.0~rc1+dfsg1-1~),
+Replaces:
+ kicad (<< 8.0.1~),
+ kicad-common (<< 5.0.0~rc1+dfsg1-1~),
+Description: Project templates for KiCad
+ KiCad is a cross platform and Open Source EDA (Electronics Design Automation)
+ suite which can be used for the creation of electronic schematic diagrams and
+ PCB artwork.
+ KiCad can load project templates where users can base their own projects on.
+ This can save much time while working on own PCBs. This package is providing
+ various templates built by the KiCad Community e.g. for common single-board
+ computers like:
+  * Raspberry PI
+  * BeagleBone
+  * Arduino (Mega, Micro, Mini, Nano, Pro Mini, Uno R3)
+ .
+ But also for other typical use cases like for
+  * ABS Plastic Hand Held/Instrument Enclosures from Hammond Manufactoring
+  * API (Automated Processes Incorporated) Series 500 Compatible Board
+  * Edgeberry Hardware Cartridge
+  * Minnowboard MAX or Turbot SBC
+  * STM32 Nucleo-64 Morpho
+  * STM32F100 discovery board (Cortex-M3™ Microcontroller Board)
+  * STM32H7xx DevEBox
+  * TI Launchpad board
+ .
+ This package also contains some worksheet files which are useful in case a
+ user wanted to create new templates for KiCad. Please have a look into the
+ documentation (available by packages kicad-doc-*) how to create new templates.
