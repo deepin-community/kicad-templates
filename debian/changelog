@@ -1,3 +1,12 @@
+kicad-templates (9.0.0-1) unstable; urgency=medium
+
+  * [99a0222] New upstream version 9.0.0
+  * [525444e] d/control: Bump Bre/Sug/Rec versions to >=/<< 9.0.0~
+  * [c5d72ab] d/control: Increase Standards-Version to 4.7.1
+    + No further changes needed.
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sun, 23 Feb 2025 14:22:15 +0200
+
 kicad-templates (8.0.8-1) unstable; urgency=medium
 
   * [630f976] New upstream version 8.0.8
