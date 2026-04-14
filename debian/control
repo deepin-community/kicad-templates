@@ -1,6 +1,5 @@
 Source: kicad-templates
 Section: electronics
-Priority: optional
 Maintainer: Debian Electronics Team <pkg-electronics-devel@alioth-lists.debian.net>
 Uploaders:
  Carsten Schoenert <c.schoenert@t-online.de>,
@@ -8,10 +7,9 @@ Uploaders:
 Build-Depends:
  debhelper-compat (= 13),
  cmake,
-Rules-Requires-Root: binary-targets
 Vcs-Git: https://salsa.debian.org/electronics-team/KiCad/kicad-templates.git
 Vcs-Browser: https://salsa.debian.org/electronics-team/KiCad/kicad-templates
-Standards-Version: 4.7.1
+Standards-Version: 4.7.4
 Homepage: https://gitlab.com/kicad/libraries/kicad-templates
 
 Package: kicad-templates
@@ -20,12 +18,12 @@ Multi-Arch: foreign
 Depends:
  ${misc:Depends},
 Recommends:
- kicad (>= 9.0.0~),
+ kicad (>= 10.0.0~),
 Breaks:
- kicad (<< 9.0.0~),
+ kicad (<< 10.0.0~),
  kicad-common (<< 5.0.0~rc1+dfsg1-1~),
 Replaces:
- kicad (<< 9.0.0~),
+ kicad (<< 10.0.0~),
  kicad-common (<< 5.0.0~rc1+dfsg1-1~),
 Description: Project templates for KiCad
  KiCad is a cross platform and Open Source EDA (Electronics Design Automation)
@@ -53,4 +51,4 @@ Description: Project templates for KiCad
  user wanted to create new templates for KiCad. Please have a look into the
  documentation (available by packages kicad-doc-*) how to create new templates.
  .
- This package is providing Projects usable with KiCad >= 9.0.0.
+ This package is providing Projects usable with KiCad >= 10.0.0.

@@ -1,3 +1,17 @@
+kicad-templates (10.0.0-1) unstable; urgency=medium
+
+  * [90da255] New upstream version 10.0.0
+  * [b0cc135] d/control: Bump Bre/Sug/Rec versions to >=/<< 10.0.0~
+  * [6a53151] d/control: Drop field Priority: optional
+  * [2d794a9] d/control: Remove Rules-Requires-Root
+    + We don't build any binaries so would need to set this to key to
+      Rules-Requires-Root: no
+      and that's now the default.
+  * [621fff3] d/control: Increase Standards-Version to 4.7.4
+    + No further changes needed.
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Mon, 06 Apr 2026 16:28:17 +0200
+
 kicad-templates (9.0.0-1) unstable; urgency=medium
 
   * [99a0222] New upstream version 9.0.0
